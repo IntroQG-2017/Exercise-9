@@ -11,21 +11,22 @@ This exercise is due by the start of class on **14.11.2016**.
 Late submissions will lose 25% of the total points per day late unless discussed with Dave or Jorina in advance of the due date.
 
 ## Problem 1: Calculating a goodness-of-fit
-For this problem, you are given a [broken Python script](read-and-plot-data.py) for reading and plotting [thermochronometer age data]().
+For this problem, you are given a [broken Python script](read-and-plot-data.py) for reading and plotting [thermochronometer age data](Coutand2014-AFT-ages.txt).
 Your job is to fix the **6 issues** with the script so that it does what says it should in the comments.
 The issues are in comments that start with the text `# FIX`.
 Data for this exercise comes from a [recent paper published on the exhumation of the Himalaya in Bhutan](http://dx.doi.org/10.1002/2013JB010891), in case you're curious.
 Your modified script should
 
-1. Read the data file and split the data into separate arrays for each variable.
-2. Calculate the goodness of fit between the measured and predicted ages in the data file. The goodness of fit equation you should use is
+1. Read the data file [`Coutand2014-AFT-ages.txt`](Coutand2014-AFT-ages.txt) and split the data into separate arrays for each variable.
+2. Calculate the goodness of fit between the measured and predicted ages in the data file.
+The goodness of fit equation you should use is
 
     ![Reduced chi-squared](Images/reduced-chi-squared.png)<br/>
 where *N* is the number of ages, *O<sub>i</sub>* is the *i*th measured age, *E<sub>i</sub>* is the *i*th predicted age, and *σ<sub>i</sub>* is the *i*th standard deviation.
 3. Produce a plot of the measured ages with their error bars and the predicted ages, both as a function of latitude.
 Be sure to display the calculated goodness-of-fit value from point 2 as text on the plot, and include axis labels and a title.
 
-**For this problem, save a modified copy of the code in your GitHub repository, and edit the `README.md` document to display a copy of your plot and answers to the questions above.**
+**For this problem, save a modified copy of the code in your GitHub repository, and edit the `README.md` document to display a copy of your plot and answers to the questions below.**
 
 ### Questions for Problem 1
 1. Looking at your plot and without looking at the goodness of fit value, how well would you say the predicted ages fit the measured ages in this example?
