@@ -45,7 +45,7 @@ The data file [`816295.csv`](Data/816295.csv) comprises daily temperature measur
 You job in this problem is to modify your code used for Exercises 6 and 7 to do the following:
 
 1. Perform the calculations of the seasonal average temperatures for summer and winter from 1927-2015, writing out the seasonal average temperature and *standard deviation in seasonal temperature* for each year to files titled `winter-avg-temps-stddev.csv` and `summer-avg-temps-stddev.csv`.
-2. Calculate the slopes `B` and *y*-intercepts `A` for linear regression lines of the both seasonal average temperatures versus time for:
+2. Calculate the slopes `B` and *y*-intercepts `A` for [linear regression lines](https://github.com/Intro-Quantitative-Geology/Lesson-9-Fitting-data/blob/master/Lesson/least-squares.md) of the both seasonal average temperatures versus time for:
   - The entire time covered in the data
   - The last 20 years
 3. Plot the results.
