@@ -26,7 +26,8 @@ where *N* is the number of ages, *O<sub>i</sub>* is the *i*th measured age, *E<s
 3. Produce a plot of the measured ages with their error bars and the predicted ages, both as a function of latitude.
 Be sure to display the calculated goodness-of-fit value from point 2 as text on the plot, and include axis labels and a title.
 
-**For this problem, save a modified copy of the code in your GitHub repository, and edit the `README.md` document to display a copy of your plot and answers to the questions below.**
+**For this problem, save a modified copy of the code in your GitHub repository, and edit the `README.md` document to display a copy of your plot and answers to the questions below.
+For the plot, also include a figure caption presenting the figure as if it were in a scientific journal article.**
 
 ### Questions for Problem 1
 1. Looking at your plot and without looking at the goodness of fit value, how well would you say the predicted ages fit the measured ages in this example?
@@ -36,9 +37,39 @@ Why or why not?
 Is your calculated goodness of fit intuitive to use?
 Why or why not?
 
-## Problem 2: Linear data regression
+## Problem 2: Linear data regression - NOAA climate data revisited again (!?!)
+For this problem we will again use the NOAA climate data from Exercises 5-7, with a slight twist.
+As a reminder, you will be working with a climate data file from the [US National Oceanographic and Atmospheric Administration (NOAA) climate database](https://www.ncdc.noaa.gov/cdo-web/).
+The data file [`816295.csv`](Data/816295.csv) comprises daily temperature measurements (in Fahrenheit) from several stations in the vicinity of the town of Ann Arbor, Michigan in the US from 1 January 1926 to 31 December 2015.
 
-### Tasks/Questions for Problem 2
+You job in this problem is to modify your code used for Exercises 6 and 7 to do the following:
+
+1. Perform the calculations of the seasonal average temperatures for summer and winter from 1927-2015, writing out the seasonal average temperature and *standard deviation in seasonal temperature* for each year to files titled `winter-avg-temps-stddev.csv` and `summer-avg-temps-stddev.csv`.
+2. Calculate the slopes `B` and *y*-intercepts `A` for linear regression lines of the both seasonal average temperatures versus time for:
+  - The entire time covered in the data
+  - The last 20 years
+3. Plot the results.
+The seasonal average temperatures should be plotted including their error bars based on the standard deviation in seasonal temperature and the corresponding linear regressions on two plots:
+  - One for the entire time covered in the data
+  - One for the last 20 years
+4. Each plot should include axis labels, a title and a legend, as well as text displaying the slope of the regression lines for both the summer and winter seasons.
+
+**For this problem, save a modified copy of your code(s) in your GitHub repository, and edit the `README.md` document to display a copy of both of your plots and answers to the questions below.
+For the plots, also include figure captions presenting the figures as if they were in a scientific journal article.
+Your modified codes can be kept in separate files as used for Exercises 6 and 7, or combined into a single script file.**
+
+### Questions for Problem 2
+1. For the linear regressions for the entire age range of seasonal average temperature data, is a line a suitable representation of the changes in seasonal average temperature from 1927-2015?
+In other words, does your linear "fit" fall entirely within the uncertainty of your seasonal average temperatures, or are there some years where the line is outside of the standard deviation in seasonal temperature?
+Is a linear fit an appropriate choice?
+2. Again for the linear regressions for the entire age range of seasonal average temperature data, do you see any difference in the slopes calculated using your code for this exercise and the `linregress()` function from the `scipy.stats` module?
+If so, how do they differ?
+Do you have any idea why they might be different?
+Lastly, do you now have a better sense of what `linregress()` does?
+3. For the linear regressions for the last 20 years, is a line a suitable representation of the changes in seasonal average temperature?
+By how much do your linear regression lines suggest seasonal average temperatures have changed per year?
+Do you find these results surprising?
+Why or why not?
 
 ## Hints
 If you get stuck, have a look at the [hints for this week's exercise](https://github.com/Intro-Quantitative-Geology/Lesson-8-Basic-geostatistics/blob/master/Lesson/hints.md).
