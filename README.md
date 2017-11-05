@@ -3,11 +3,11 @@ In this week's exercise we will work on comparing observations (data) to predict
 In particular, we will explore two different ways in which we can compare data to a prediction:
 
 - Comparing individual measured values to their equivalent predicted values using a *goodness-of-fit* equation
-- Fitting a line to *xy* data using the *least squares regression*
+- Fitting a line to *x-y* data using the *least squares regression*
 
 Both of these cases are frequently used, and can even be conducted in commonly used software such as **Microsoft Excel**, but our goal is to understand what the numbers from these "fits" mean, and how they are calculated.
 
-This exercise is due by the start of class on **14.11.2016**.
+This exercise is due by midnight on **13.11.2017**.
 Late submissions will lose 25% of the total points per day late unless discussed with Dave or Jorina in advance of the due date.
 
 ## Problem 1: Calculating a goodness-of-fit
