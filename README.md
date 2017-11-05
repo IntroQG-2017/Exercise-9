@@ -7,7 +7,7 @@ In particular, we will explore two different ways in which we can compare data t
 
 Both of these cases are frequently used, and can even be conducted in commonly used software such as **Microsoft Excel**, but our goal is to understand what the numbers from these "fits" mean, and how they are calculated.
 
-This exercise is due by midnight on **13.11.2017**.
+This exercise is due by **midnight on 13.11.2017**.
 Late submissions will lose 25% of the total points per day late unless discussed with Dave or Jorina in advance of the due date.
 
 ## Problem 1: Calculating a goodness-of-fit
