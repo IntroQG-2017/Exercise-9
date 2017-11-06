@@ -37,9 +37,12 @@ Why or why not?
 Is your calculated goodness of fit intuitive to use?
 Why or why not?
 
-## Problem 2: Linear data regression - NOAA climate data revisited again (!?!)
-For this problem we will again use the NOAA climate data from Exercises 5-7, with a slight twist.
+## Problem 2: Linear data regression - Detecting changing climate
+For this problem we will again use the NOAA climate data from Exercises 6 and 7 with a slight twist.
 As a reminder, you will be working with a climate data file from the [US National Oceanographic and Atmospheric Administration (NOAA) climate database](https://www.ncdc.noaa.gov/cdo-web/).
+You are welcome to load in the original data file and process it as was done for Exercises 6 and 7, or you can use the seasonal data output file for Exercise 7 as a starting point.
+
+
 The data file [`816295.csv`](Data/816295.csv) comprises daily temperature measurements (in Fahrenheit) from several stations in the vicinity of the town of Ann Arbor, Michigan in the US from 1 January 1926 to 31 December 2015.
 
 You job in this problem is to modify your code used for Exercises 6 and 7 to do the following:
