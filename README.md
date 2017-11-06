@@ -49,12 +49,12 @@ You job in this problem is to modify your code used for Exercises 6 and 7 to do 
 
 1. Calculate the seasonal average temperatures **and** *standard deviation in seasonal temperature* for summer and winter from 1953-2016.
 2. Calculate the slopes `B` and *y*-intercepts `A` for [linear regression lines](https://introqg.github.io/2017/lessons/L9/least-squares.html) of the both seasonal average temperatures versus time for:
-  - The entire time covered in the data
-  - The last 20 years
+    - The entire time covered in the data
+    - The last 20 years
 3. Plot the results.
 The seasonal average temperatures should be plotted including their error bars based on the standard deviation in seasonal temperature and the corresponding linear regressions on two plots:
-  - One for the entire time covered in the data
-  - One for the last 20 years
+    - One for the entire time covered in the data
+    - One for the last 20 years
 4. Each plot should include axis labels, a title and a legend, as well as text displaying the slope of the regression lines for both the summer and winter seasons.
 
 **For this problem, save a modified copy of your code(s) in your GitHub repository, and edit the `README.md` document to display a copy of both of your plots and answers to the questions below.
