@@ -40,15 +40,15 @@ Why or why not?
 ## Problem 2: Linear data regression - Detecting changing climate
 For this problem we will again use the NOAA climate data from Exercises 6 and 7 with a slight twist.
 As a reminder, you will be working with a climate data file from the [US National Oceanographic and Atmospheric Administration (NOAA) climate database](https://www.ncdc.noaa.gov/cdo-web/).
-You are welcome to load in the original data file and process it as was done for Exercises 6 and 7, or you can use the seasonal data output file for Exercise 7 as a starting point.
-
-
-The data file [`816295.csv`](Data/816295.csv) comprises daily temperature measurements (in Fahrenheit) from several stations in the vicinity of the town of Ann Arbor, Michigan in the US from 1 January 1926 to 31 December 2015.
+You are welcome to load in the [original data file](Data/1091402.txt) and process it as was done for Exercises 6 and 7, or you can use the [seasonal data output file](Data/HEL-seasonal-data-1953-2016.csv) for Exercise 7 as a starting point.
+As a reminder, the [original data file](Data/1091402.txt) has daily mean, minimum, and maximum temperatures for the Helsinki-Vantaa airport weather station from January 1952-October 2017.
+The [seasonal data output file](Data/HEL-seasonal-data-1953-2016.csv) has monthly average temperatures in Fahrenheit and Celsius, as well as monthly temperature anomalies from the same range of dates.
+As always, you should inspect the data files before you start working with them.
 
 You job in this problem is to modify your code used for Exercises 6 and 7 to do the following:
 
-1. Perform the calculations of the seasonal average temperatures for summer and winter from 1927-2015, writing out the seasonal average temperature **and** *standard deviation in seasonal temperature* for each year to files titled `winter-avg-temps-stddev.csv` and `summer-avg-temps-stddev.csv`.
-2. Calculate the slopes `B` and *y*-intercepts `A` for [linear regression lines](https://github.com/Intro-Quantitative-Geology/Lesson-9-Fitting-data/blob/master/Lesson/least-squares.md) of the both seasonal average temperatures versus time for:
+1. Calculate the seasonal average temperatures **and** *standard deviation in seasonal temperature* for summer and winter from 1953-2016.
+2. Calculate the slopes `B` and *y*-intercepts `A` for [linear regression lines](https://introqg.github.io/2017/lessons/L9/least-squares.html) of the both seasonal average temperatures versus time for:
   - The entire time covered in the data
   - The last 20 years
 3. Plot the results.
@@ -59,23 +59,24 @@ The seasonal average temperatures should be plotted including their error bars b
 
 **For this problem, save a modified copy of your code(s) in your GitHub repository, and edit the `README.md` document to display a copy of both of your plots and answers to the questions below.
 For the plots, also include figure captions presenting the figures as if they were in a scientific journal article.
-Your modified codes can be kept in separate files as used for Exercises 6 and 7, or combined into a single script file.**
+Your modified codes can be kept in separate files as used for Exercises 6 and 7, or in a single script file.**
 
 ### Questions for Problem 2
-1. For the linear regressions for the entire age range of seasonal average temperature data, is a line a suitable representation of the changes in seasonal average temperature from 1927-2015?
+1. For the linear regressions for the entire age range of seasonal average temperature data, is a line a suitable representation of the changes in seasonal average temperature from 1953-2016?
 In other words, does your linear "fit" fall entirely within the uncertainty of your seasonal average temperatures, or are there some years where the line is outside of the standard deviation in seasonal temperature?
 Is a linear fit an appropriate choice?
-2. Again for the linear regressions for the entire age range of seasonal average temperature data, do you see any difference in the slopes calculated using your code for this exercise and the `linregress()` function from the `scipy.stats` module?
-If so, how do they differ?
-Do you have any idea why they might be different?
-Lastly, do you now have a better sense of what `linregress()` does?
-3. For the linear regressions for the last 20 years, is a line a suitable representation of the changes in seasonal average temperature?
+By how much do your linear regression lines suggest seasonal average temperatures have changed per year?
+2. What about the linear regressions for the last 20 years?
+Is a line a suitable representation of the changes in seasonal average temperature for this shorter time period?
 By how much do your linear regression lines suggest seasonal average temperatures have changed per year?
 Do you find these results surprising?
 Why or why not?
+3. Globally, climate data would suggest that not only are temperatures rising on average each year, but that the rate of change in temperature may also be increasing.
+Does your analysis from the Helsinki-Vantaa weather data support this?
+Does this kind of analysis help demonstrate why some people may have a difficulty in understanding global climate change?
 
 ## Hints
-If you get stuck, have a look at the [hints for this week's exercise](https://github.com/Intro-Quantitative-Geology/Lesson-9-Fitting-data/blob/master/Lesson/hints.md).
+If you get stuck, have a look at the [hints for this week's exercise](https://introqg.github.io/2017/lessons/L9/exercise-9-hints.html).
 
 ### Footnote(s)
 [1]: [Coutand, I., Whipp, D.M., Grujic, D., Bernet, M., Fellin, M.G., Bookhagen, B., Landry, K.R., Ghalley, S.K. and Duncan, C., 2014. Geometry and kinematics of the Main Himalayan Thrust and Neogene crustal exhumation in the Bhutanese Himalaya derived from inversion of multithermochronologic data. *Journal of Geophysical Research: Solid Earth*, *119*(2), pp.1446-1481](https://dx.doi.org/10.1002/2013JB010891)
